@@ -1,15 +1,12 @@
-/*main {
-    
-}*/
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     display: flex;
     justify-content: center;
-}
-
-body {
-    margin: 0%;
-    display: flex;
-    flex-direction: column;
 }
 
 .sceneDoll {
@@ -17,13 +14,12 @@ border: 1px solid blue !important;
 padding-top: 10px;
 width: 100%;
 background-image: url("../images/bgSky.jpg");
-height: 400px;
+height: 346px;
 background-size: cover;
 background-repeat: no-repeat;
 background-position: bottom;
 display: flex;
 flex-direction: row;
-flex-wrap: wrap;
 justify-content: space-evenly;
 }
 
@@ -47,6 +43,8 @@ justify-content: space-evenly;
 .tree img {
     width: 81px;
     height: 170px;
+    display: flex;
+    align-self: flex-end;
 }
 
 .resultsSquiders {
@@ -67,6 +65,12 @@ justify-content: space-evenly;
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.squider {
+    height: 80px;
+    width: 48px;
 }
 
 footer {
