@@ -1,11 +1,27 @@
+/*main {
+    
+}*/
 
-.sceneSquiders {
-    border: 1px solid blue !important;
-    width: 100%;
+body {
+    margin: 0%;
 }
-
 
 .sceneDoll {
 border: 1px solid blue !important;
 width: 100%;
+background-image: url("../images/bgSky.jpg");
+height: 300px;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: bottom;
 }
+
+.sceneSquiders {
+    border: 1px solid blue !important;
+    width: 100%;
+    background-image: url("../images/bgOpenRoad.jpg");
+    height: 300px;
+    background-size: cover;background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+
