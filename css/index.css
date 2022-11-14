@@ -1,19 +1,60 @@
 /*main {
     
 }*/
+header {
+    display: flex;
+    justify-content: center;
+}
 
 body {
     margin: 0%;
+    display: flex;
+    flex-direction: column;
 }
 
 .sceneDoll {
 border: 1px solid blue !important;
+padding-top: 10px;
 width: 100%;
 background-image: url("../images/bgSky.jpg");
-height: 300px;
+height: 400px;
 background-size: cover;
 background-repeat: no-repeat;
 background-position: bottom;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+.trafficLightGreen {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.tree {
+    border: 1px solid red;
+    background-image: url("../images/treeAndGuards.png");
+    width: 226px;
+    height: 345px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.tree img {
+    width: 81px;
+    height: 170px;
+}
+
+.resultsSquiders {
+    border: 2px solid rgb(204, 231, 34);
+    width: 30px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
 }
 
 .sceneSquiders {
@@ -21,7 +62,18 @@ background-position: bottom;
     width: 100%;
     background-image: url("../images/bgOpenRoad.jpg");
     height: 300px;
-    background-size: cover;background-repeat: no-repeat;
+    background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+footer {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
