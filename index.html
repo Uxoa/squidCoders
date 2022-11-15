@@ -15,10 +15,12 @@
    <main>
       <div class="sceneDoll"> 
          <div class="trafficLightGreen">
-            <img src="./images/lightGreen.png" alt="Traffic light">
+            <a href="#" onMouseOver="cambiar();" onMouseOut="volver();">
+             <img src="./images/lightGreen.png" id="matrix" alt="Traffic light"/></a>
          </div>
          <div class="tree">
-            <img src="./images/dollBack.png" alt="Doll Back">
+               <a href="#" onMouseOver="cambiar();" onMouseOut="volver();">
+               <img src="./images/dollBack.png" id="doll" alt="dollBack"/></a>
          </div>
          <div class="resultsSquiders">
             Lista
@@ -34,5 +36,6 @@
    <footer>
       <p>© Copyrigth 2022 Squid Coders</p>
    </footer>
-</body>
-</html>
+   <script src="./js/index.js"></script>
+ </body>
+ </html>
