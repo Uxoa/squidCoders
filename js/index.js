@@ -1,5 +1,7 @@
+
+
 let squidersPlayer = ["Himorell", "Paloma", "Flor", "Leidy", "Sandra"];
-let selected = ["JM", "Montse"];
+let removedSquiders = [];
 
 function toChooseSquider() {
     let n = squidersPlayer.length; //Se inicializa con el tamaño del array//
@@ -7,12 +9,19 @@ function toChooseSquider() {
     let selectedPlayer = squidersPlayer[i];  //Guarda la variable con el valor de i//
     console.log("squider eliminado es " + selectedPlayer);
 
-    selected.unshift(selectedPlayer);
+
+    removedSquiders.unshift(selectedPlayer);
     squidersPlayer.splice(i,1);
     console.log("Lista de vivos " + squidersPlayer); 
-    console.log("Lista de squiders KO " + selected);
-    return selected, selectedPlayer, squidersPlayer;
+    console.log("Lista de squiders KO " + removedSquiders);
+    return removedSquiders, selectedPlayer, squidersPlayer;
    
 }
-toChooseSquider()
 
+
+const button = document.querySelector('button');
+
+button.onclick = function() {
+   toChooseSquider();
+  alert('Eliminados:' + removedSquiders);
+};
