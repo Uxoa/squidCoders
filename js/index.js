@@ -24,12 +24,15 @@ const button = document.querySelector('button');
 button.onclick = function() {
    toChooseSquider();
   alert('Eliminados:' + removedSquiders);
+  cargaListadoVivos();
+  eliminados();
 };
 
 
 
 function cargaListadoVivos(){
    document.getElementById("vivos").innerHTML = squidersPlayer;
+
 }
 
 // dev
