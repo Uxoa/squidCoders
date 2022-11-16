@@ -25,3 +25,15 @@ button.onclick = function() {
    toChooseSquider();
   alert('Eliminados:' + removedSquiders);
 };
+
+
+
+function cargaListadoVivos(){
+   document.getElementById("vivos").innerHTML = squidersPlayer;
+}
+
+// dev
+
+function eliminados(){
+   document.getElementById("eliminados").innerHTML = removedSquiders;
+}

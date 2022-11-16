@@ -53,6 +53,7 @@ justify-content: space-evenly;
     height: 45px;
     display: flex;
     flex-direction: row;
+ 
 }
 
 .sceneSquiders {
@@ -65,6 +66,7 @@ justify-content: space-evenly;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
 
 }
 
