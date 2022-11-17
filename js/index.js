@@ -4,14 +4,14 @@ let squidersPlayer = ["Himorell", "Paloma", "Flor", "Leidy", "Sandra"];
 let removedSquiders = [];
 
 function toChooseSquider() {
-    let n = squidersPlayer.length; //Se inicializa con el tamaño del array//
-    let i = Math.floor(Math.random() * n);
-    let selectedPlayer = squidersPlayer[i];  //Guarda la variable con el valor de i//
+    let numberPlayers = squidersPlayer.length; //Se inicializa con el tamaño del array//
+    let index = Math.floor(Math.random() * numberPlayers);
+    let selectedPlayer = squidersPlayer[index];  //Guarda la variable con el valor de i//
     console.log("squider eliminado es " + selectedPlayer);
 
 
     removedSquiders.unshift(selectedPlayer);
-    squidersPlayer.splice(i,1);
+    squidersPlayer.splice(index,1);
     console.log("Lista de vivos " + squidersPlayer); 
     console.log("Lista de squiders KO " + removedSquiders);
     return removedSquiders, selectedPlayer, squidersPlayer;
@@ -29,14 +29,15 @@ button.onclick = function() {
 };
 
 
+   function cargaListadoVivos(){
 
-function cargaListadoVivos(){
-   document.getElementById("vivos").innerHTML = squidersPlayer;
+      document.getElementById("vivos").innerHTML = (`${squidersPlayer.map((namePlayer) => `<span class="squidImage">${namePlayer}</span>`).join('')}`);
+};
 
-}
 
 // dev
 
 function eliminados(){
-   document.getElementById("eliminados").innerHTML = removedSquiders;
+   document.getElementById("eliminados").innerHTML = removedSquiders.join("<br/>");
 }
+

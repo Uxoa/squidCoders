@@ -9,6 +9,12 @@ header {
     justify-content: center;
 }
 
+button{
+    cursor: pointer;
+    background-color:transparent!important;
+    border: 0 !important;
+    }
+
 .sceneDoll {
 border: 1px solid blue !important;
 padding-top: 10px;
@@ -48,12 +54,22 @@ justify-content: space-evenly;
 }
 
 .resultsSquiders {
-    border: 2px solid rgb(204, 231, 34);
-    width: 30px;
-    height: 45px;
+    border: 4px solid #000000;
+    width: 15%;
+    height: 120px;
     display: flex;
     flex-direction: row;
- 
+    justify-content: center;
+    background-color:#2D4349;
+    padding:3%;
+    font-family:‘Courier New’, Courier, monospace;
+    font-size:16px;
+    color:#ffffff;
+    font-weight:bold;
+}
+.resultsSquiders h2{
+    font-size:20px;
+    text-align:center;
 }
 
 .sceneSquiders {
@@ -70,6 +86,19 @@ justify-content: space-evenly;
 
 }
 
+.squidImage{
+    border:1px solid yellow;
+    background-image: url("../images/squider.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    width:60px;
+    height:60px;
+    text-align:center;
+    padding:20px 0 0 0;
+    font-size:15px;
+ }
+
 .squider {
     height: 80px;
     width: 48px;
@@ -83,3 +112,4 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
