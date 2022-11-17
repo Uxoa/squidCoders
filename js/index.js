@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
    function cambiar () {
       document.getElementById('trafficLight').src = "./images/lightRed.png";
       document.getElementById('doll').src = "./images/dollFront.png";
@@ -10,7 +9,6 @@
       document.getElementById('doll').src = "./images/dollBack.png";
    }
    
-=======
 
 let squidersPlayer = ["Himorell", "Paloma", "Flor", "Leidy", "Sandra"];
 let removedSquiders = [];
@@ -53,4 +51,3 @@ function eliminados(){
    document.getElementById("eliminados").innerHTML = removedSquiders.join("<br/>");
 }
 
->>>>>>> origin/randomList
