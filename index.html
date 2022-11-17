@@ -10,32 +10,31 @@
 </head>
 <body>
    <header>
+      <a href="#">Instructions</a>
       <img src="./images/logo.png" alt="Logo Squid Coders">
+     <a href="#" onclick="cargaListadoVivos()">PLAY</a>
    </header> 
    <main>
-         <div class="sceneDoll"> 
-            <div class="trafficLightGreen">
-            <a href="#" onclick="cambiar();" ondblclick="volver();">
-               <img src="./images/lightGreen.png" id="trafficLight" alt="Traffic light"/></a>
-            </div>
-            <div class="tree">
-               <a href="#" onclick="cambiar();" ondblclick="volver();">
-               <img src="./images/dollBack.png" id="doll" alt="dollBack"/></a>
-            </div>
-            <div class="resultsSquiders">
-               Lista
-            </div>
+      <div class="sceneDoll"> 
+         <div class="trafficLightGreen">
+           <button onclick="toChooseSquider()"> <img src="./images/lightGreen.png" alt="Traffic light"></button>
          </div>
-         <div class="sceneSquiders">
-            <img class="squider" src="./images/squider.png" alt="Squider">
-            <img class="squider" src="./images/squider.png" alt="Squider">
-            <img class="squider" src="./images/squider.png" alt="Squider">
-            <img class="squider" src="./images/squider.png" alt="Squider">
+         <div class="tree">
+            <img src="./images/dollBack.png" alt="Doll Back">
          </div>
-      </main>
-      <footer>
-         <p>© Copyrigth 2022 Squid Coders</p>
-      </footer>
-         <script src="./js/index.js"></script>
-   </body>
+         <div class="resultsSquiders" id="eliminados">
+            <h2>* 오징어 게임 *</h2>
+         </div>
+      </div>
+      <div class="sceneSquiders">
+         <img class="squider" src="./images/squider.png" alt="Squider">
+         <img class="squider" src="./images/squider.png" alt="Squider">
+         <img class="squider" src="./images/squider.png" alt="Squider">
+         <img class="squider" src="./images/squider.png" alt="Squider">
+      </div>
+   </main>
+   <footer>
+      <p>© Copyrigth 2022 Squid Coders</p>
+   </footer>
+</body>
 </html>
