@@ -36,6 +36,7 @@ main{
 
 button{
     background-color: DE145D;
+    border: 2px solid #DE145D;
 }
 .doll img{
     height: 170px;
