@@ -3,8 +3,6 @@ function timeTrafficLight(name){
    } 
    setTimeout(timeTrafficLight, 1300, "Darío");
 
-
-
 const add = function(a,b){
    console.log(a+b)
  };
@@ -12,6 +10,10 @@ const add = function(a,b){
  setTimeout(add,1000,1,2);
  
  // 3 (in a second)
+
+
+
+
 
 
 function cambiar() {
@@ -49,10 +51,8 @@ function cargaListadoVivos(){
 };
 
 const button = document.querySelector('button');
-   
-
 button.onclick = function() {
-   document.getElementById("vivos").innerHTML = (`${squidersPlayer.map((namePlayer) => `<span class="squidImage">${namePlayer}</span>`).join('')}`);
+  document.getElementById("vivos").innerHTML = (`${squidersPlayer.map((namePlayer) => `<span class="squidImage">${namePlayer}</span>`).join('')}`);
    toChooseSquider()
    cargaListadoVivos();
    alert('Eliminados:' + removedSquiders);
