@@ -6,28 +6,33 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    <script src="sweetalert2.min.js"></script>
-<link rel="stylesheet" href="sweetalert2.min.css">
+   <link rel="stylesheet" href="sweetalert2.min.css">
    <title>Squid Coders</title>
    <link rel="stylesheet" href="css/game.css">
 
 </head>
-<body>
+<body onload="changePictureBack()">
    <header>
-      <a href="#">Instructions</a>
       <img src="./images/logo.png" alt="Logo Squid Coders">
+      <a href="index.html" class="instructions"> Instructions </a>
    </header> 
    <main>
       <div class="sceneDoll"> 
          <div class="trafficLightGreen">
-           <button id="play"> <img src="./images/lightGreen.png" id="trafficLight" alt="Traffic light"></button>
-           <iframe src="./sounds/Jugaremos Muévete Luz Verde - Recortada.mp3"
-controls></iframe>
+            <button id="play"> 
+               <img src="./images/lightGreen.png" id="trafficLight" alt="Traffic light"> 
+               <iframe src="./audio/willPlay01.mp3" controls></iframe>
+            </button>
+           
+           
          </div>
          <div class="tree">
             <img src="./images/dollBack.png" id="doll" alt="Doll Back">
          </div>
          <div class="resultsSquiders" id="losers">
-            <h2>* 오징어 게임 *</h2>
+            <div class="coreanText">
+               * 오징어 게임 *
+            </div>
          </div>
       </div>
 

@@ -9,16 +9,41 @@ header {
     justify-content: center;
 }
 
-button{
+a.instructions {
+    margin: 10px 0 0 20px;
+    height: 30px;
+    text-align: center;
+    background-color: #DE145D;
+    padding: 10px 0 0 0;
+    width: 100px;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
     cursor: pointer;
-    background-color:transparent!important;
+}
+
+a button {
+    margin: 20px 0 0 50px;
+    background-color: #DE145D;
+    padding: 5px!important;
+    width: 120px;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button{
+    background-color:transparent;
     border: 0 !important;
+    cursor: pointer;
     }
 
-    iframe{display:none;}
+iframe{display: none;}
 
-
-    
 .sceneDoll {
 border: 1px solid blue !important;
 padding-top: 10px;
@@ -74,6 +99,43 @@ justify-content: space-evenly;
 .resultsSquiders h2{
     font-size:20px;
     text-align:center;
+}
+
+.swal2-icon {
+    border: 0!important;
+}
+
+.swal2-actions {
+    background-color: #DE145D;
+    width: 75px;
+    height: 30px;
+    text-decoration: none;
+    color: #DE145D;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.swal2-styled {
+    margin:0;
+    padding: 0;
+    border-radius: 0!important;
+    transition: none;
+    box-shadow: 0;
+    border: 0;
+}
+
+[class^=swal2] {
+    -webkit-tap-highlight-color:#DE145D ; 
+}
+
+.swal2-confirm {
+    border: 0;
+    border-radius:0;
+    background: #DE145D;
+    background-color: #DE145D;
+    color: #fff;
+    font-size: 1em;
 }
 
 .sceneSquiders {

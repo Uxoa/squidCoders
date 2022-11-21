@@ -3,6 +3,11 @@ function changePicture() {
    document.getElementById("doll").src="images/dollFront.png";
 };
 
+function changePictureBack() {
+   document.getElementById("trafficLight").src="images/lightGreen.png";
+   document.getElementById("doll").src="images/dollBack.png";
+};
+
 
 let squidersPlayer = ["Himorell", "Paloma", "Flor", "Leidy", "Sandra"];
 let removedSquiders = [];
@@ -22,38 +27,41 @@ function toChooseSquider() {
 
 function losers(){
    document.getElementById("losers").innerHTML = removedSquiders.join("<br/>");
-};
+}
 
 
 function winners(){
    document.getElementById("winners").innerHTML = 
    (`${squidersPlayer.map((namePlayer) => `<div class="squidImage">${namePlayer}</div>`).join('')}`);
-};
+}
 
 const button = document.querySelector('button');
 button.onclick = function() {
    document.getElementById("winners").innerHTML = (`${squidersPlayer.map((namePlayer) => `<span class="squidImage">${namePlayer}</span>`).join('')}`);
-   document.getElementById("play").addEventListener("click",soundSongSquid);
-   toChooseSquider()
-   setTimeout(() =>winners(), 6000);
+   soundSongSquid();
+   setTimeout(() => changePicture(), 9000);
+   setTimeout(() => changePictureBack(), 13000);
+   toChooseSquider();
+   setTimeout(() =>winners(), 13000);
    setTimeout(()=> Swal.fire({
-      title: 'and the loser is...',
+      title: 'Squider out of play is...',
       text: `${removedSquiders}`,
-      icon: 'question',
-      confirmButtonText: 'Tray again!'
+      iconHtml: '<img src="images/squidImg.png" width="90" alt="Squid Icon"/>',
+      confirmButtonText: 'Next!'
 }).then((result) => {
-  if (result.isConfirmed) {}}), 5000);
-  setTimeout(() => losers(), 6000);
- changePicture();
+  if (result.isConfirmed) {}}), 12000);
+  setTimeout(() => losers(), 13000);
+
+
  //setTimeout(() => alert('Eliminados:' + removedSquiders), 5000);
-};
+}
 
 
 
 
 //music
 function soundSongSquid(){
-   let sound = document.createElement("iframe"); sound.setAttribute("src","../sounds/willPlay01.mp3");
+   let sound = document.createElement("iframe"); sound.setAttribute("src","/audio/willPlay01.mp3");
    document.body.appendChild(sound); document.getElementById("play").removeEventListener("click",soundSongSquid);
    }
    function stopSquidSong(){

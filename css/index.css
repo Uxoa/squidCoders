@@ -34,6 +34,17 @@ main{
     justify-content: center;
 }
 
+a button {
+    background-color: #DE145D;
+    width: 75px;
+    height: 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 button{
     background-color: DE145D;
     border: 2px solid #DE145D;
