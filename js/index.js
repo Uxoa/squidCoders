@@ -37,8 +37,9 @@ function winners(){
 
 const button = document.querySelector('button');
 button.onclick = function() {
+  
    document.getElementById("winners").innerHTML = (`${squidersPlayer.map((namePlayer) => `<span class="squidImage">${namePlayer}</span>`).join('')}`);
-   soundSongSquid();
+   sound();
    setTimeout(() => changePicture(), 9000);
    setTimeout(() => changePictureBack(), 13000);
    toChooseSquider();
@@ -60,15 +61,12 @@ button.onclick = function() {
 
 
 //music
-function soundSongSquid(){
-   let sound = document.createElement("iframe"); sound.setAttribute("src","../audio/willPlay01.mp3");
-   document.body.appendChild(sound); document.getElementById("play").removeEventListener("click",soundSongSquid);
+function sound() {
+   var audio = document.getElementById("soundSquid")
+   if (audio.paused) {
+       audio.play()
    }
-   function stopSquidSong(){
-   var iframe = document.getElementsByTagName("iframe");
-   if (iframe.length > 0){ iframe[0].parentNode.removeChild(iframe[0]);
-   document.getElementById("play").addEventListener("click",soundSongSquid);
-   } }
+}
 
 
 

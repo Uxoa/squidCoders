@@ -9,6 +9,12 @@ header {
     justify-content: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 a.instructions {
     margin: 10px 0 0 20px;
     height: 30px;
@@ -42,7 +48,9 @@ button{
     cursor: pointer;
     }
 
-iframe{display: none;}
+audio{
+    display: none;
+}
 
 .sceneDoll {
 border: 1px solid blue !important;
@@ -72,14 +80,56 @@ justify-content: space-evenly;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: center
+    z-index: -1;
 }
 
 .tree img {
     width: 81px;
     height: 170px;
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.laserContainer {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
     align-self: flex-end;
+    z-index: 1;
+    
+}
+
+.laser {
+    height: 100px;
+    background-color: #fff;
+    width: 3px;
+    transform: translateY (3px);
+    position: relative;
+    x-index: -1;
+    animation: vibration 2s ease infinite alternate;
+}
+
+@keyframes vibration {
+    0%{
+        box-shadow: 0 0 8px 6px red;
+    }
+    100%{
+        box-shadow: 0 0 6px 8px red;
+    }
+    
+}
+
+@keyframes open {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+    
 }
 
 .resultsSquiders {
