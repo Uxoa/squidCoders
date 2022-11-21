@@ -1,6 +1,6 @@
 function changePicture() {
-   document.getElementById("trafficLight").src="../images/lightRed.png";
-   document.getElementById("doll").src="../images/dollFront.png";
+   document.getElementById("trafficLight").src="images/lightRed.png";
+   document.getElementById("doll").src="images/dollFront.png";
 };
 
 
