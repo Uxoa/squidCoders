@@ -61,7 +61,7 @@ button.onclick = function() {
 
 //music
 function soundSongSquid(){
-   let sound = document.createElement("iframe"); sound.setAttribute("src","/audio/willPlay01.mp3");
+   let sound = document.createElement("iframe"); sound.setAttribute("src","../audio/willPlay01.mp3");
    document.body.appendChild(sound); document.getElementById("play").removeEventListener("click",soundSongSquid);
    }
    function stopSquidSong(){

@@ -87,14 +87,16 @@ justify-content: space-evenly;
     width: 15%;
     height: 120px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
     background-color:#2D4349;
     padding:3%;
     font-family:‘Courier New’, Courier, monospace;
     font-size:16px;
     color:#ffffff;
     font-weight:bold;
+    overflow-y: scroll;
 }
 .resultsSquiders h2{
     font-size:20px;
