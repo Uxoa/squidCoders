@@ -5,8 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-   <script src="sweetalert2.min.js"></script>
-   <link rel="stylesheet" href="sweetalert2.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
    <title>Squid Coders</title>
    <link rel="stylesheet" href="css/game.css">
 
@@ -21,7 +20,10 @@
          <div class="trafficLightGreen">
             <button id="play"> 
                <img src="./images/lightGreen.png" id="trafficLight" alt="Traffic light"> 
-               <iframe src="./audio/willPlay01.mp3" controls></iframe>
+               <h1 class="animate__animated animate__bounce animate__repeat-2">
+                  <span class="arroyPlay">&#8593;</span>
+                  PLAY!!</h1>
+               <audio src="./audio/willPlay01.mp3" controls></audio>
             </button>
            
            
@@ -31,7 +33,7 @@
          </div>
          <div class="resultsSquiders">
             <div class="coreanText">
-               * 오징어 게임 *
+               *오징어*
             </div>
             <p id="losers"></p>
          </div>
@@ -40,10 +42,7 @@
    
          <div class="sceneSquiders" id="winners">
 
-            <!-- <img class="squider" src="./images/squider.png" alt="Squider">
-             <img class="squider" src="./images/squider.png" alt="Squider">
-             <img class="squider" src="./images/squider.png" alt="Squider">
-             <img class="squider" src="./images/squider.png" alt="Squider">-->
+      
           </div>
          
 

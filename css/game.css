@@ -42,20 +42,32 @@ button{
     cursor: pointer;
     }
 
-iframe{display: none;}
+audio{display: none;}
+
+
+.arroyPlay{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    font-size:60px;
+  font-family: 'Press Start 2P';
+
+
+}
+
 
 .sceneDoll {
-border: 1px solid blue !important;
-padding-top: 10px;
-width: 100%;
-background-image: url("../images/bgSky.jpg");
-height: 346px;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: bottom;
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
+    border: 1px solid blue !important;
+    padding-top: 10px;
+    width: 100%;
+    background-image: url("../images/bgSky.jpg");
+    height: 346px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .trafficLightGreen {
@@ -76,8 +88,8 @@ justify-content: space-evenly;
 }
 
 .tree img {
-    width: 81px;
-    height: 170px;
+    width: 120px;
+    height: auto;
     display: flex;
     align-self: flex-end;
 }
@@ -154,6 +166,20 @@ justify-content: space-evenly;
 
 }
 
+
+
+
+
+.animate__animated{
+    color:white;
+     }
+
+
+
+
+
+
+
 .squidImage{
     border:1px solid yellow;
     background-image: url("../images/squider.png");
@@ -165,12 +191,70 @@ justify-content: space-evenly;
     text-align:center;
     padding:20px 0 0 0;
     font-size:15px;
- }
+    
+}
+    
+    
+
 
 .squider {
     height: 80px;
     width: 48px;
+   
 }
+
+ 
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+    --animate-repeat: 10;
+    
+  }
+.Himorell{
+     --animate-duration: 800ms;
+     --animate-delay: 0.9s;
+    --animate-repeat: 10;
+    display: inline-block;
+    margin: 0 0.5rem;
+    margin-top:80px;
+    transform-origin:150px center; 
+    position:relative; 
+    animation:rotate 3s linear infinite; }
+
+  .Himorell::before { content:''; position:absolute; height:200px; width:100px; background:transparent; animation:rotate 3s linear reverse infinite; }
+  @keyframes rotate{ 100% { transform:rotate(360deg); }
+   }
+
+.Flor{
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+    --animate-repeat: 10;
+    display: inline-block;
+    margin: 0 0.5rem;
+    margin-top:80px; 
+    transform-origin:150px center; 
+    position:relative; 
+    animation:rotate02 3s linear infinite; }
+
+  .Flor::before { 
+    content:''; 
+    position:absolute;
+    height:200px; 
+    width:100px; 
+    background:transparent; 
+    animation:rotate 3s linear alternate infinite; }
+  @keyframes rotate02{ from {
+    transform: rotate(40deg);
+  }
+  to {
+    transform: rotate(100deg);
+  } }
+   
+
+      
+
+
+ 
 
 footer {
     width: 100%;
