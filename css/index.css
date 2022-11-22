@@ -26,12 +26,17 @@ main{
 }
 
 .instruction{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
-    width: 60%;
-    display: flex;
+    width: 70%;
+    display: center;
     align-items: center;
     justify-content: center;
+    color: #0F4A2F;
+    font-weight: normal;
+    position: center;
+    text-align: center;
+    font-family: 'Lobster';
 }
 
 .inputContainer {
@@ -73,8 +78,9 @@ a button {
     text-decoration: none;
     color: white;
     border-radius: 25px;
-    font-weight: bold;
+    font-weight: normal;
     cursor: pointer;
+    font-family: 'Press Start 2P';
 }
 
 button{
@@ -94,4 +100,10 @@ mainFooter{
     display: inline;
     color: white;
     justify-content: end;
+    font-style: italic;
+}
+
+.footerInfo{
+    font-style: italic;
+    color: white
 }

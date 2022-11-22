@@ -7,8 +7,18 @@ body {
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
+a {
+    padding: 0!important;
+    margin: 0!important;
+    text-decoration: none;
+    color: white;
+}
+
+.instructions {
+    margin: 0 0 0 20px;
 main {
     display: flex;
     flex-direction: column;
@@ -20,14 +30,17 @@ a.instructions {
     height: 30px;
     text-align: center;
     background-color: #DE145D;
-    padding: 10px 0 0 0;
-    width: 100px;
+    padding: 0;
+    width: auto;
     font-size: 14px;
     text-decoration: none;
     color: white;
     border-radius: 25px;
-    font-weight: bold;
     cursor: pointer;
+    font-family: 'Press Start 2P';
+    font-size: 10px;
+    display: flex;
+    align-items: center;
 }
 
 a button {
@@ -38,8 +51,10 @@ a button {
     text-decoration: none;
     color: white;
     border-radius: 25px;
-    font-weight: bold;
+    font-weight: normal;
     cursor: pointer;
+    font-family: 'Press Start 2P'
+    
 }
 
 button{
@@ -209,12 +224,17 @@ justify-content: space-evenly;
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    width:60px;
-    height:60px;
+    width:80px;
+    height:80px;
     text-align:center;
-    padding:20px 0 0 0;
-    font-size:15px;
- }
+    font-size:8px;
+    font-family: 'Press Start 2P';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 20px 0;
+
+}
 
 .squider {
     height: 80px;
