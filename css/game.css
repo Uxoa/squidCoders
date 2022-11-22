@@ -19,7 +19,6 @@ a {
 
 .instructions {
     margin: 0 0 0 20px;
-main {
     display: flex;
     flex-direction: column;
     align-items: center;
