@@ -34,6 +34,38 @@ main{
     justify-content: center;
 }
 
+.inputContainer {
+    background-color: transparent;
+    width: 250px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.inputBox {
+    width: 60%;
+    display:inline;
+}
+.textInput {
+    border: none;
+    height: 30px;
+    width: 12vw;
+}
+
+#addSquider {
+    width: 110px;
+    height: 30px;
+    background-color: #DE145D;
+    color: #FFFFFF;
+    border-radius: 25px;
+    border-style: none;
+    padding: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
 a button {
     background-color: #DE145D;
     width: 75px;
@@ -46,8 +78,11 @@ a button {
 }
 
 button{
-    background-color: DE145D;
+    background-color: #DE145D;
     border: 2px solid #DE145D;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
 }
 .doll img{
     height: 170px;

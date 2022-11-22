@@ -22,6 +22,8 @@ function toChooseSquider() {
 
     removedSquiders.unshift(selectedPlayer);
     squidersPlayer.splice(index,1);
+
+  
    
 }
 
@@ -37,22 +39,22 @@ function winners(){
 
 const button = document.querySelector('button');
 button.onclick = function() {
-  
    document.getElementById("winners").innerHTML = (`${squidersPlayer.map((namePlayer) => `<span class="squidImage">${namePlayer}</span>`).join('')}`);
-   sound();
+   soundStartGame();
+   setTimeout(() => button.disabled = true, 0);
    setTimeout(() => changePicture(), 9000);
    setTimeout(() => changePictureBack(), 13000);
    toChooseSquider();
    setTimeout(() =>winners(), 13000);
    setTimeout(()=> Swal.fire({
       title: 'Squider out of play is...',
-      text: `${removedSquiders}`,
+      text: `${removedSquiders[0]}`,
       iconHtml: '<img src="images/squidImg.png" width="90" alt="Squid Icon"/>',
       confirmButtonText: 'Next!'
 }).then((result) => {
   if (result.isConfirmed) {}}), 12000);
   setTimeout(() => losers(), 13000);
-
+  setTimeout(() => button.disabled = false, 13000);
 
  //setTimeout(() => alert('Eliminados:' + removedSquiders), 5000);
 }
@@ -61,12 +63,9 @@ button.onclick = function() {
 
 
 //music
-function sound() {
-   var audio = document.getElementById("soundSquid")
+function soundStartGame() {
+   let audio = document.getElementById("soundSquid")
    if (audio.paused) {
-       audio.play()
-   }
+      audio.play()
 }
-
-
-
+}
