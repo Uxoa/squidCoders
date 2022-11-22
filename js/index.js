@@ -37,6 +37,13 @@ function winners(){
    (`${squidersPlayer.map((namePlayer) => `<div class="squidImage">${namePlayer}</div>`).join('')}`);
 }
 
+/*const button = document.querySelector('button');
+button.onclick = addSquider() {
+   let nameNewSquider = document.getElementById("nameNewSquider").value;
+   nameNewSquider.unshift(squidersPlayer);
+
+ }*/
+
 const button = document.querySelector('button');
 button.onclick = function() {
    document.getElementById("winners").innerHTML = (`${squidersPlayer.map((namePlayer) => `<span class="squidImage">${namePlayer}</span>`).join('')}`);
