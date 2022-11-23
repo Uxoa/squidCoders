@@ -1,4 +1,4 @@
-let squidersPlayer = ["Himorell", "Paloma", "Flor", "Leidy", "Sandra"];
+let squidersPlayer = ["Himo", "Paloma", "Flor", "Sandra", "Leidy", "Noa", "VeroK", "Veflo", "Nathy", "Raquel", "LolaN", "LolaG", "Karmela", "CarmenG", "Alesia", "Sierri", "Adri", "PalomaR", "Bea", "Alba", "Ana", "Camila", "Paula", "Elena", "Esther"];
 let removedSquiders = [];
 let squiderLength = 0;
 function toChooseSquider() {

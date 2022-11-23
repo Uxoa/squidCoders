@@ -8,8 +8,16 @@
         background-repeat:no-repeat;
         background-position: 100%!important;  
     }
+
+    .sceneSquiders {
+        height: 400px!important;
+        display:flex;
+        align-items: flex-end;
+        flex-wrap : wrap;
     }
 
+
+ }
 
 body {
     margin: 0px;
@@ -87,7 +95,8 @@ audio{
     height: 346px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    z-index:0!important;
 }
 
 .trafficLightGreen {
@@ -197,12 +206,14 @@ audio{
 .sceneSquiders {
     width: 100%;
     /*background-image: url("../images/bgOpenRoad.jpg");*/
-    height: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: end;
     color: #ffffff;
-
+    flex-wrap : wrap;
+   
+    z-index:1000!important;
 }
 
 
@@ -217,7 +228,7 @@ audio{
      }
 
 
-     .arroyPlay{
+.arroyPlay{
     width:100%;
     display:flex;
     flex-direction: column;
@@ -242,7 +253,6 @@ audio{
     justify-content: center;
     align-items: center;
     padding: 0 0 20px 0;
-
 }
 
 .squider {
@@ -254,8 +264,8 @@ audio{
  
 
 
- .Himorell{ 
-    height: 10vh;
+.Himo, .Noa, .Raquel, .Bea, .Karmela { 
+    height: 6vh;
     aspect-ratio: 1 / 1;
     position: relative;
     animation-delay: 4s;
@@ -290,8 +300,8 @@ audio{
 
  
 
-.Flor{
-  height: 10vh;
+ .Flor, .Alesia, .PalomaR, .Sierri, .Ana {
+  height: 8vh;
   aspect-ratio: 1 / 1;
   position: relative;
   animation-delay: 4s;
@@ -322,8 +332,8 @@ audio{
     to {transform: translateY(-18vh);}
  }
 
-.Leidy{
-    height: 10vh;
+ .Leidy, .Paula, .Alba, .Nathy, .Esther{
+    height: 5vh;
     aspect-ratio: 1 / 1;
     position: relative;
     animation-delay: 4s;
@@ -354,8 +364,8 @@ audio{
  }
 
 
-.Sandra{
-    height: 10vh;
+ .Sandra, .CarmenG, .LolaN, .LolaG, .Adri {
+    height: 9vh;
     aspect-ratio: 1 / 1;
     position: relative;
     animation-delay: 4s;
@@ -386,7 +396,7 @@ audio{
     to {transform: translateY(-14vh);}
  }
 
- .Paloma{
+ .Paloma, .Camila, .VeroK, .Veflo, .Elena{
     height: 10vh;
     aspect-ratio: 1 / 1;
     position: relative;
