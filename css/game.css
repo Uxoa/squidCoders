@@ -339,7 +339,7 @@ audio{
     25%  {right:20px; top:-20px;}
     35%  {right:-20px; top:-25px;}
     40%  {right:-55px; top:-30px;}
-    45%  {right:0px; top:-40px;}
+    45%  {right:20px; top:-40px;}
     55%  {right:20px; top:-45px;}
     60%  {right:-35px; top:-50px;}
     65%  {right:40px; top:-50px;}
@@ -402,17 +402,19 @@ audio{
     15%  {right:0px; top:-20px;}
     25%  {right:-20px; top:-20px;}
     35%  {right:10px; top:-25px;}
-    40%  {right:-55px; top:-30px;}
+    40%  {right:-15px; top:-30px;}
     45%  {right:0px; top:-36px;}
-    55%  {right:10px; top:-40px;}
-    60%  {rightt:-35px; top:-45px;}
+    55%  {right:20px; top:-40px;}
+    60%  {rightt:-35px; top:-35px;}
     65%  {right:-30px; top:-50px;}
     75%  {right:45px; top:-45px;}
     80%  {left:30px; top:-35px;}
-    100% {left:0px; top:40px;}
+    100% {left:0px; top:-40px;}
     from {transform: translateY(0vh);}
     to {transform: translateY(-12vh);}
+    
 }
+    
 
 
 footer {

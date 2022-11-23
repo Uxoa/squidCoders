@@ -90,6 +90,3 @@ function soundStartGame() {
       audio.play()
 }
 }
-
-// Exploding doll svg
-
