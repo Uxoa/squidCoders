@@ -3,7 +3,6 @@ let removedSquiders = [];
 let squiderLength = 0;
 
 function toChooseSquider() {
-
    if ( squiderLength == squidersPlayer.length ) {
       setTimeout(()=> Swal.fire({
          title: 'GAME IS OVER',
@@ -73,9 +72,6 @@ button.onclick = function() {
 
  //setTimeout(() => alert('Eliminados:' + removedSquiders), 5000);
 }
-
-
-
 
 //music
 function soundStartGame() {
