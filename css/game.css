@@ -1,7 +1,11 @@
 body {
     margin: 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
+    background-image: url("../images/bgSky.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: top ;  
 }
 
 header {
@@ -81,7 +85,7 @@ audio{
 .sceneDoll {
     padding-top: 10px;
     width: 100%;
-    background-image: url("../images/bgSky.jpg");
+    /*background-image: url("../images/bgSky.jpg");*/
     height: 346px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,7 +102,7 @@ audio{
 }
 
 .tree {
-    border: 1px solid red;
+
     background-image: url("../images/treeAndGuards.png");
     width: 226px;
     height: 345px;
@@ -186,9 +190,8 @@ audio{
 }
 
 .sceneSquiders {
-    border: 1px solid blue !important;
     width: 100%;
-    background-image: url("../images/bgOpenRoad.jpg");
+    /*background-image: url("../images/bgOpenRoad.jpg");*/
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -282,6 +285,7 @@ audio{
   to {transform: translateY(-18vh);}
  }
 
+ 
 
 .Flor{
   height: 10vh;
@@ -410,7 +414,111 @@ audio{
     to {transform: translateY(-12vh);}
 }
 
- 
+.cls-1 {
+    fill: #e7c899;
+  }
+
+  .cls-1, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-2, .cls-20, .cls-21, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+    fill-rule: evenodd;
+  }
+
+  .cls-2 {
+    fill: #dcebc4;
+  }
+
+  .cls-3 {
+    fill: #2f313d;
+  }
+
+  .cls-4 {
+    fill: #d9a254;
+  }
+
+  .cls-5 {
+    fill: #474132;
+  }
+
+  .cls-6 {
+    fill: #dfbb85;
+  }
+
+  .cls-7 {
+    fill: #e4e410;
+  }
+
+  .cls-8 {
+    fill: #b6b607;
+  }
+
+  .cls-9 {
+    fill: #ea7723;
+  }
+
+  .cls-10 {
+    fill: #bf5e18;
+  }
+
+  .cls-11 {
+    fill: #32332d;
+  }
+
+  .cls-12 {
+    fill: #444848;
+  }
+
+  .cls-13 {
+    fill: #a06de5;
+  }
+
+  .cls-14 {
+    fill: #dbb67d;
+  }
+
+  .cls-15 {
+    fill: #793f79;
+  }
+
+  .cls-16 {
+    fill: #edb77d;
+  }
+
+  .cls-17 {
+    fill: #faf7f3;
+  }
+
+  .cls-18 {
+    fill: #282828;
+  }
+
+  .cls-19 {
+    fill: #b5926c;
+  }
+
+  .cls-20 {
+    fill: #fff;
+  }
+
+  .cls-21 {
+    fill: #af422d;
+  }
+
+  #Calque_1 {  
+    overflow: visible !important;
+    width: 120px;
+    
+  }
+  
+  #blast {
+    stroke: none;
+  }
+  
+  .element {
+    fill: #000;
+    fill-opacity: 0.7;
+    stroke: #333;
+    stroke-width: 0.5;
+    stroke-linejoin: round;
+  }
 
 footer {
     width: 100%;
