@@ -1,3 +1,26 @@
+let squidersPlayer = ["Himorell", "Paloma", "Flor", "Leidy", "Sandra"];
+let removedSquiders = [];
+let squiderLength = 0;
+
+
+
+
+function toChooseSquider() {
+
+   if ( squiderLength == squidersPlayer.length ) {
+      alert("Probando");
+   }
+   if(squiderLength != squidersPlayer.length) {
+      let numberPlayers = squidersPlayer.length; //Se inicializa con el tamaño del array//
+      let index = Math.floor(Math.random() * numberPlayers);
+      let selectedPlayer = squidersPlayer[index];  //Guarda la variable con el valor de i//
+      console.log("squider eliminado es " + selectedPlayer);
+      removedSquiders.unshift(selectedPlayer);
+      squidersPlayer.splice(index,1);
+   }
+   
+}
+
 function changePicture() {
    document.getElementById("trafficLight").src="images/lightRed.png";
    document.getElementById("doll").src="images/dollFront.png";
@@ -7,25 +30,6 @@ function changePictureBack() {
    document.getElementById("trafficLight").src="images/lightGreen.png";
    document.getElementById("doll").src="images/dollBack.png";
 };
-
-
-let squidersPlayer = ["Himorell", "Paloma", "Flor", "Leidy", "Sandra"];
-let removedSquiders = [];
-
-
-function toChooseSquider() {
-    let numberPlayers = squidersPlayer.length; //Se inicializa con el tamaño del array//
-    let index = Math.floor(Math.random() * numberPlayers);
-    let selectedPlayer = squidersPlayer[index];  //Guarda la variable con el valor de i//
-    console.log("squider eliminado es " + selectedPlayer);
-
-
-    removedSquiders.unshift(selectedPlayer);
-    squidersPlayer.splice(index,1);
-
-  
-   
-}
 
 function losers(){
    document.getElementById("losers").innerHTML = removedSquiders.join("<br/>");
