@@ -2,7 +2,7 @@
 <h4>Alternative elimination game to Wheel of Doom)</h4>
 
 <ul>
-<li>Inspired by the TV series "The Squid Game".</li>
+<li>Inspired by the TV serie "The Squid Game".</li>
 <li>There is a preliminary screen with the instructions of the game.</li>
 <li>In the development of the game will appear: A doll, a traffic light, a tree, 25
 players (Squiders) with their respective names, two security guards, a blackboard
@@ -27,21 +27,16 @@ For live version of the project, run the code with Live Server.
 <h3>Demo version for mobile phone:</h3>
 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-
-<img style="width:270px; height:540px" src="https://user-images.githubusercontent.com/116546588/203596010-88e9d25a-ad6c-49c0-aed7-a43dfb8c3d77.png" alt="Demo version for mobile phone: Intro"/>
-
-<img style="width:270px; height:540px" src="https://user-images.githubusercontent.com/116546588/203596046-fb59b1ce-36a4-4aa3-8f1c-a7ef0ec03a74.png" alt="Demo version for mobile phone: Play"/>
-
+<img style="width:270px; height:540px" src="https://user-images.githubusercontent.com/116546588/203613448-dfefc567-1075-4654-8ca7-510a4f55906f.png" alt="Demo version for mobile phone: Intro"/>
+<img style="width:270px; height:540px" src="https://user-images.githubusercontent.com/116546588/203615644-3a42f0e6-23d1-4421-b518-96e0d897e363.png" alt="Demo version for mobile phone: Play"/>
 </div>
+
 
 <h3>Demo version for PC:</h3>
 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-
-<img style="width:500px; height:302px" src="https://user-images.githubusercontent.com/116546588/203600378-81ad63b7-9944-4dc6-8658-bce04de4c9db.png" alt="Demo version for PC: Intro"/>
-
-<img style="width:500px; height:302px" src="https://user-images.githubusercontent.com/116546588/203600427-ecf91eb7-68f6-43ee-8931-cf981911ba49.png" alt="Demo version for PC: Play"/>
-
+<img style="width:500px; height:302px;" src="https://user-images.githubusercontent.com/116546588/203616181-ef31f652-8439-4d14-9de1-f2e4334d60e6.png" alt="Demo version for PC: Intro"/>
+<img style="width:500px; height:302px;" src="https://user-images.githubusercontent.com/116546588/203616691-200ba587-04a2-4ee6-b5e5-735c5711d104.png" alt="Demo version for PC: Intro"/>
 </div>
 
 <h3>Next steps</h3>
@@ -56,7 +51,9 @@ For live version of the project, run the code with Live Server.
 
 <h3>Final design & atomic design</h3>
 
-<img style="width:500px; height:302px" src="https://user-images.githubusercontent.com/116546588/203604661-903e4de1-23f3-48e4-9102-79b205e31564.png" alt="Final design & atomic design"/>
+<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
+<img style="width:323px; height:699px" src="https://user-images.githubusercontent.com/116546588/203617217-a1c2eb7c-4e1d-4630-977d-848ccce3fcb7.png" alt="Final design & atomic design"/>
+</div>
 
 <h3>Stacks</h3>
 <ul>
