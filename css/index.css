@@ -26,12 +26,49 @@ main{
 }
 
 .instruction{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
-    width: 60%;
-    display: flex;
+    width: 70%;
+    display: center;
     align-items: center;
     justify-content: center;
+    color: #0F4A2F;
+    font-weight: normal;
+    position: center;
+    text-align: center;
+    font-family: 'Lobster';
+}
+
+.inputContainer {
+    background-color: transparent;
+    width: 250px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.inputBox {
+    width: 60%;
+    display:inline;
+}
+.textInput {
+    border: none;
+    height: 30px;
+    width: 12vw;
+}
+
+#addSquider {
+    width: 110px;
+    height: 30px;
+    background-color: #DE145D;
+    color: #FFFFFF;
+    border-radius: 25px;
+    border-style: none;
+    padding: 8px;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 a button {
@@ -41,13 +78,17 @@ a button {
     text-decoration: none;
     color: white;
     border-radius: 25px;
-    font-weight: bold;
+    font-weight: normal;
     cursor: pointer;
+    font-family: 'Press Start 2P';
 }
 
 button{
-    background-color: DE145D;
+    background-color: #DE145D;
     border: 2px solid #DE145D;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
 }
 .doll img{
     height: 170px;
@@ -59,4 +100,10 @@ mainFooter{
     display: inline;
     color: white;
     justify-content: end;
+    font-style: italic;
+}
+
+.footerInfo{
+    font-style: italic;
+    color: white
 }

@@ -8,12 +8,17 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
    <title>Squid Coders</title>
    <link rel="stylesheet" href="css/game.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+   
 
 </head>
 <body onload="changePictureBack()">
    <header>
       <img src="./images/logo.png" alt="Logo Squid Coders">
-      <a href="index.html" class="instructions"> Instructions </a>
+      <div class="instructions"><a href="index.html">Instructions</a></div>
    </header> 
    <main>
       <div class="sceneDoll"> 
@@ -23,10 +28,8 @@
                <h1 class="animate__animated animate__bounce animate__repeat-2">
                   <span class="arroyPlay">&#8593;</span>
                   PLAY!!</h1>
-               <audio src="./audio/willPlay01.mp3" controls></audio>
+               <audio id="soundSquid" src="./audio/willPlay01.mp3" controls type="audio/mp3"> </audio>
             </button>
-           
-           
          </div>
          <div class="tree">
             <img src="./images/dollBack.png" id="doll" alt="Doll Back">
@@ -38,12 +41,10 @@
             <p id="losers"></p>
          </div>
       </div>
-
-   
-         <div class="sceneSquiders" id="winners">
-
       
-          </div>
+      <div class="sceneSquiders" id="winners">
+         
+      </div>
          
 
 

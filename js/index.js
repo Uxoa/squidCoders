@@ -22,6 +22,8 @@ function toChooseSquider() {
 
     removedSquiders.unshift(selectedPlayer);
     squidersPlayer.splice(index,1);
+
+  
    
 }
 
@@ -43,9 +45,18 @@ function winners(){
 
 
 
-const button = document.querySelector('button');
-button.onclick = function() {
-   document.getElementById("winners").innerHTML = (`${squidersPlayer.map((namePlayer) => `<span class="squidImage ${namePlayer}">${namePlayer}</span>`).join('')}`);
+
+/*const button = document.querySelector('button');
+button.onclick = addSquider() {
+   let nameNewSquider = document.getElementById("nameNewSquider").value;
+   nameNewSquider.unshift(squidersPlayer);
+
+ }*/
+
+ const button = document.querySelector('button');
+   button.onclick = function() {
+   document.getElementById("winners").innerHTML = (`${squidersPlayer.map((namePlayer) => `<span class="squidImage ${namePlayer}">${namePlayer}</span>`).join('')}`);   soundStartGame();
+   setTimeout(() => button.disabled = true, 0);
    setTimeout(() => changePicture(), 9000);
    setTimeout(() => changePictureBack(), 13000);
    toChooseSquider();
@@ -58,7 +69,7 @@ button.onclick = function() {
 }).then((result) => {
   if (result.isConfirmed) {}}), 12000);
   setTimeout(() => losers(), 13000);
-
+  setTimeout(() => button.disabled = false, 13000);
 
  //setTimeout(() => alert('Eliminados:' + removedSquiders), 5000);
 }
@@ -72,14 +83,10 @@ for(const box of boxes) {
 }
 
 
- //music
- function soundSongSquid(){
-   let sound = document.createElement("iframe"); sound.setAttribute("src","../audio/willPlay01.mp3");
-   document.body.appendChild(sound); document.getElementById("play").removeEventListener("click",soundSongSquid);
-   }
-   function stopSquidSong(){
-   var iframe = document.getElementsByTagName("iframe");
-   if (iframe.length > 0){ iframe[0].parentNode.removeChild(iframe[0]);
-   document.getElementById("play").addEventListener("click",soundSongSquid);
-   } }
-
+//music
+function soundStartGame() {
+   let audio = document.getElementById("soundSquid")
+   if (audio.paused) {
+      audio.play()
+}
+}
