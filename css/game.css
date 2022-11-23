@@ -17,12 +17,7 @@ a {
     color: white;
 }
 
-.instructions {
-    margin: 0 0 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 a.instructions {
     margin: 10px 0 0 20px;
@@ -61,6 +56,23 @@ button{
     border: 0 !important;
     cursor: pointer;
     }
+
+    .instructions a {
+        margin: 0 0 0 20px;
+        height: 30px;
+        text-align: center;
+        background-color: #DE145D;
+        padding: 0 10px 0 10px!important;
+        width: auto;
+        text-decoration: none;
+        color: white;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: 'Press Start 2P';
+        font-size: 8px;
+        display: flex;
+        align-items: center;
+    }  
 
 audio{
     display: none;
