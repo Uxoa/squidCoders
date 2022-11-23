@@ -251,10 +251,8 @@ audio{
    
 }
 
- 
 
-
- .Himorell{ 
+ .Himo,.Noa,.Raquel,.Bea,.Karmela { 
     height: 10vh;
     aspect-ratio: 1 / 1;
     position: relative;
@@ -290,7 +288,7 @@ audio{
 
  
 
-.Flor{
+.Flor,.Alesia,.PalomaR,.Sierri,.Ana {
   height: 10vh;
   aspect-ratio: 1 / 1;
   position: relative;
@@ -322,7 +320,7 @@ audio{
     to {transform: translateY(-18vh);}
  }
 
-.Leidy{
+.Leidy,.Paula,.Alba,.Nathy,.Esther {
     height: 10vh;
     aspect-ratio: 1 / 1;
     position: relative;
@@ -354,7 +352,7 @@ audio{
  }
 
 
-.Sandra{
+.Sandra,.CarmenG,.LolaN,.LolaG,.Adri {
     height: 10vh;
     aspect-ratio: 1 / 1;
     position: relative;
@@ -386,7 +384,7 @@ audio{
     to {transform: translateY(-14vh);}
  }
 
- .Paloma{
+ .Paloma,.Camila,.VeroK,.Veflo,.Elena{
     height: 10vh;
     aspect-ratio: 1 / 1;
     position: relative;
