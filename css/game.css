@@ -276,7 +276,7 @@ audio{
   65%  {left:-30px; top:-50px;}
   75%  {left:-35px; top:-55px;}
   80%  {left:-40px; top:-50px;}
-  100% {left:-40px; top:-50px;}
+  100% {left:8px; top:-40px;}
 
   from {transform: translateY(0vh);}
   to {transform: translateY(-18vh);}
@@ -362,10 +362,19 @@ audio{
               
 @keyframes animation04{
     0%   {left:0px; top:0px;}
-    25%  {left:-70px; top:-25px;}
-    50%  {left:15px; top:-40px;}
-    75%  {left:65px; top:-65px;}
-    100% {left:50px; top:-65px;}
+    5%   {left:-10px; top:-5px;}
+    10%  {left:10px; top:-10px;}
+    15%  {left:0px; top:-25px;}
+    25%  {left:20px; top:-20px;}
+    35%  {left:-20px; top:-25px;}
+    40%  {left:-55px; top:-30px;}
+    45%  {left:0px; top:-40px;}
+    55%  {left:20px; top:-45px;}
+    60%  {left:-35px; top:-50px;}
+    65%  {left:40px; top:-50px;}
+    75%  {left:-35px; top:-55px;}
+    80%  {left:-30px; top:-50px;}
+    100% {left:0px; top:15px;}
     from {transform: translateY(0vh);}
     to {transform: translateY(-14vh);}
  }
@@ -390,13 +399,13 @@ audio{
     25%  {right:-20px; top:-20px;}
     35%  {right:10px; top:-25px;}
     40%  {right:-55px; top:-30px;}
-    45%  {right:0px; top:-40px;}
-    55%  {right:10px; top:-45px;}
-    60%  {rightt:-35px; top:-50px;}
+    45%  {right:0px; top:-36px;}
+    55%  {right:10px; top:-40px;}
+    60%  {rightt:-35px; top:-45px;}
     65%  {right:-30px; top:-50px;}
-    75%  {rightt:45px; top:-55px;}
-    80%  {right:-30px; top:-55px;}
-    100% {right:-30px; top:-60px;}
+    75%  {right:45px; top:-45px;}
+    80%  {left:30px; top:-35px;}
+    100% {left:0px; top:40px;}
     from {transform: translateY(0vh);}
     to {transform: translateY(-12vh);}
 }
