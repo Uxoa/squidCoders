@@ -1,4 +1,4 @@
-let squidersPlayer = ["Himorell", "Paloma", "Flor", "Leidy", "Sandra"];
+let squidersPlayer = ["Himorell", "Paloma"];
 let removedSquiders = [];
 let squiderLength = 0;
 
@@ -8,7 +8,14 @@ let squiderLength = 0;
 function toChooseSquider() {
 
    if ( squiderLength == squidersPlayer.length ) {
-      alert("Probando");
+      setTimeout(()=> Swal.fire({
+         title: 'GAME IS OVER',
+         iconHtml: '<img src="images/squidImg.png" width="90" alt="Squid Icon"/>',
+         confirmButtonText: 'Play again!'
+   }).then((result) => {
+      if (result.isConfirmed) {
+         window.location.href = "index.html"
+      }}),);
    }
    if(squiderLength != squidersPlayer.length) {
       let numberPlayers = squidersPlayer.length; //Se inicializa con el tamaño del array//

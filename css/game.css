@@ -161,6 +161,17 @@ justify-content: space-evenly;
     border: 0;
 }
 
+.swal2-styled.swal2-confirm {
+    margin:0;
+    padding: 0;
+    border-radius: 25px!important;
+    background-color: #DE145D!important;
+    border: 0;
+    transition: none;
+    box-shadow: 0;
+    border: 0;
+}
+
 [class^=swal2] {
     -webkit-tap-highlight-color:#DE145D ; 
 }
