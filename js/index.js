@@ -21,6 +21,7 @@ function toChooseSquider() {
 
     removedSquiders.unshift(selectedPlayer); 
     squidersPlayer.splice(index,1);
+  
 }
 
 
@@ -63,7 +64,8 @@ button.onclick = addSquider() {
       title: 'Squider out of play is...',
       text: `${removedSquiders[0]}`,
       iconHtml: '<img src="images/squidImg.png" width="90" alt="Squid Icon"/>',
-      confirmButtonText: 'Next!'
+      confirmButtonColor:'#DE145D' ,
+      confirmButtonText:'Next!!',
 }).then((result) => {
   if (result.isConfirmed) {}}), 12000);
   setTimeout(() => losers(), 13000);
