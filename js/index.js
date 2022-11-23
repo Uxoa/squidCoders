@@ -19,13 +19,11 @@ function toChooseSquider() {
     let selectedPlayer = squidersPlayer[index];  //Guarda la variable con el valor de index//
     console.log("squider eliminado es " + selectedPlayer);
 
-
-    removedSquiders.unshift(selectedPlayer);
+    removedSquiders.unshift(selectedPlayer); 
     squidersPlayer.splice(index,1);
-
-  
-   
 }
+
+
 
 function losers(){
    document.getElementById("losers").innerHTML = removedSquiders.join("<br/>");

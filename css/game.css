@@ -57,7 +57,7 @@ button{
     cursor: pointer;
     }
 
-    .instructions a {
+.instructions a {
         margin: 0 0 0 20px;
         height: 30px;
         text-align: center;
@@ -79,7 +79,6 @@ audio{
 }
 
 .sceneDoll {
-    border: 1px solid blue !important;
     padding-top: 10px;
     width: 100%;
     background-image: url("../images/bgSky.jpg");
@@ -195,27 +194,35 @@ audio{
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     color: #ffffff;
 
 }
 
 
 
-
-
 .animate__animated{
-    color:white;
+    background-color:#ffffff;
+    border:5px solid #DE145D;
+    color: #0F4A2F;
+    padding:10px; 
+    border-radius:70%;
+    height:70px;
      }
 
 
-
-
-
+     .arroyPlay{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    font-size:30px;
+    font-family: 'Press Start 2P';
+    padding:5px 0 5px 0;
+    }
+    
 
 
 .squidImage{
-    border:1px solid yellow;
     background-image: url("../images/squider.png");
     background-size:contain;
     background-repeat:no-repeat;
@@ -239,55 +246,109 @@ audio{
 }
 
  
-:root {
-    --animate-duration: 800ms;
-    --animate-delay: 0.9s;
-    --animate-repeat: 10;
-    
-  }
-.Himorell{
-     --animate-duration: 800ms;
-     --animate-delay: 0.9s;
-    --animate-repeat: 10;
-    display: inline-block;
-    margin: 0 0.5rem;
-    margin-top:80px;
-    transform-origin:150px center; 
-    position:relative; 
-    animation:rotate 3s linear infinite; }
 
-  .Himorell::before { content:''; position:absolute; height:200px; width:100px; background:transparent; animation:rotate 3s linear reverse infinite; }
-  @keyframes rotate{ 100% { transform:rotate(360deg); }
-   }
+
+ .Himorell{ 
+    height: 10vh;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    animation-name: animation01;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+ }
+
+
+@keyframes animation01{
+  0%   {left:0px; top:0px;}
+  25%  {left:-50px; top:-20px;}
+  50%  {left:-55px; top:-40px;}
+  75%  {left:0px; top:-50px;}
+  100% {left:0px; top:-50px;}
+  from {transform: translateY(0vh);}
+  to {transform: translateY(-20vh);}
+ }
+
 
 .Flor{
-    --animate-duration: 800ms;
-    --animate-delay: 0.9s;
-    --animate-repeat: 10;
-    display: inline-block;
-    margin: 0 0.5rem;
-    margin-top:80px; 
-    transform-origin:150px center; 
-    position:relative; 
-    animation:rotate02 3s linear infinite; }
+  height: 10vh;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  animation-name: animation02;
+  animation-duration: 12s;
+  animation-iteration-count: 1;
+}
 
-  .Flor::before { 
-    content:''; 
-    position:absolute;
-    height:200px; 
-    width:100px; 
-    background:transparent; 
-    animation:rotate 3s linear alternate infinite; }
-  @keyframes rotate02{ from {
-    transform: rotate(40deg);
-  }
-  to {
-    transform: rotate(100deg);
-  } }
-   
 
+  @keyframes animation02{
+    0%   {left:0px; top:0px;}
+    25%  {left:-50px; top:-20px;}
+    50%  {left:10px; top:-40px;}
+    75%  {left:20px; top:-65px;}
+    100% {left:25px; top:-65px;}
+    from {transform: translateY(0vh);}
+    to {transform: translateY(-18vh);}
+ }
+
+.Leidy{
+    height: 10vh;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    animation-name: animation03;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+}
       
+      
+ @keyframes animation03{
+    0%   {right:0px; top:0px;}
+    25%  {right:-50px; top:-20px;}
+    50%  {right:-30px; top:-40px;}
+    75%  {right:40px; top:-65px;}
+    100% {right:40px; top:-65px;}
+    from {transform: translateY(0vh);}
+    to {transform: translateY(-16vh);}
+ }
 
+
+.Sandra{
+    height: 10vh;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    animation-name: animation04;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+}
+              
+              
+@keyframes animation04{
+    0%   {left:0px; top:0px;}
+    25%  {left:-70px; top:-25px;}
+    50%  {left:15px; top:-40px;}
+    75%  {left:65px; top:-65px;}
+    100% {left:50px; top:-65px;}
+    from {transform: translateY(0vh);}
+    to {transform: translateY(-14vh);}
+ }
+
+ .Paloma{
+    height: 10vh;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    animation-name: animation05;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+ }
+                  
+                  
+@keyframes animation05{
+    0%   {left:0px; top:0px;}
+    25%  {left:-40px; top:-65px;}
+    50% {left:40px; top:-65px;}
+    75%  {left:0px; top:-50px;}
+    100% {left:0px; top:-50px;}
+    from {transform: translateY(0vh);}
+    to {transform: translateY(-12vh);}
+}
 
  
 
