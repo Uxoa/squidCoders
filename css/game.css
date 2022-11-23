@@ -1,3 +1,21 @@
+@media only screen and (min-width: 800px) {
+.tree {
+    background-image: url(../images/treeAndGuards.png);
+    width: 226px;
+    height: auto;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+
+  }
+
+
 body {
     margin: 0px;
     display: flex;
@@ -102,7 +120,6 @@ audio{
 }
 
 .tree {
-
     background-image: url("../images/treeAndGuards.png");
     width: 226px;
     height: 345px;
@@ -113,7 +130,7 @@ audio{
     justify-content: center
 }
 
-.tree img {
+#doll {
     width: 120px;
     height: auto;
     display: flex;
