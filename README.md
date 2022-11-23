@@ -47,7 +47,14 @@ For live version of the project, run the code with Live Server.
 <li>Include a persistence system to keep deleted squiders inactive (PHP and a MySql database).</li>
 </ul>
 
-<h3>Initial sketch & designs (Screenshots)</h3>
+<h3>Initial sketch & designs</h3>
+
+<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
+<img style="width:330px; height:186px" src="https://user-images.githubusercontent.com/116546588/203619572-d0562b3a-109b-4af6-98a5-40bded259e09.png" alt="Sketch 1"/>
+<img style="width:330px; height:186px" src="https://user-images.githubusercontent.com/116546588/203619608-520df639-4dce-46a1-a5f3-6268c04c3731.png" alt="Sketch 2"/>
+<img style="width:330x; height:186px" src="https://user-images.githubusercontent.com/116546588/203619633-2979ec81-b485-4514-967e-4043b967cb5d.png" alt="Sketch 3"/>
+</div>
+
 
 <h3>Final design & atomic design</h3>
 
