@@ -1,12 +1,11 @@
 let squidersPlayer = ["Himo", "Paloma", "Flor", "Sandra", "Leidy", "Noa", "VeroK", "Veflo", "Nathy", "Raquel", "LolaN", "LolaG", "Karmela", "CarmenG", "Alesia", "Sierri", "Adri", "PalomaR", "Bea", "Alba", "Ana", "Camila", "Paula", "Elena", "Esther"];
 let removedSquiders = [];
 let squiderLength = 0;
-
 function toChooseSquider() {
    if ( squiderLength == squidersPlayer.length ) {
       setTimeout(()=> Swal.fire({
          title: 'GAME IS OVER',
-         iconHtml: '<img src="/squidCoders/images/overDoll.png" width="90" alt="Over Doll Icon"/>',
+         iconHtml: '<img src="/images/overDoll.png" width="90" alt="Over Doll Icon"/>',
          confirmButtonText: 'Play again!'
    }).then((result) => {
       if (result.isConfirmed) {
@@ -21,7 +20,6 @@ function toChooseSquider() {
       removedSquiders.unshift(selectedPlayer);
       squidersPlayer.splice(index,1);
    }
-   
 }
 
 function changePicture() {
@@ -34,27 +32,20 @@ function changePictureBack() {
    document.getElementById("doll").src="images/dollBack.png";
 };
 
+
 function losers(){
    document.getElementById("losers").innerHTML = removedSquiders.join("<br/>");
+   
 }
-
 
 function winners(){
    document.getElementById("winners").innerHTML = 
-   (`${squidersPlayer.map((namePlayer) => `<div class="squidImage">${namePlayer}</div>`).join('')}`);
+   (`${squidersPlayer.map((namePlayer) => `<span class="squidImage ` + this.getAttribute("data-id") + `">${namePlayer}</span>`).join('')}`);
 }
 
-/*const button = document.querySelector('button');
-button.onclick = addSquider() {
-   let nameNewSquider = document.getElementById("nameNewSquider").value;
-   nameNewSquider.unshift(squidersPlayer);
-
- }*/
-
 const button = document.querySelector('button');
-button.onclick = function() {
-   document.getElementById("winners").innerHTML = (`${squidersPlayer.map((namePlayer) => `<span class="squidImage">${namePlayer}</span>`).join('')}`);
-   soundStartGame();
+   button.onclick = function() {
+   document.getElementById("winners").innerHTML = (`${squidersPlayer.map((namePlayer) => `<span class="squidImage ${namePlayer}">${namePlayer}</span>`).join('')}`);   soundStartGame();
    setTimeout(() => button.disabled = true, 0);
    setTimeout(() => changePicture(), 9000);
    setTimeout(() => changePictureBack(), 13000);
@@ -64,14 +55,24 @@ button.onclick = function() {
       title: 'Squider out of play is...',
       text: `${removedSquiders[0]}`,
       iconHtml: '<img src="images/squidImg.png" width="90" alt="Squid Icon"/>',
-      confirmButtonText: 'Next!'
+      confirmButtonColor:'#DE145D' ,
+      confirmButtonText:'Next!!',
 }).then((result) => {
-  if (result.isConfirmed) {}}), 12000);
-  setTimeout(() => losers(), 13000);
-  setTimeout(() => button.disabled = false, 13000);
+   if (result.isConfirmed) {}}), 12000);
+   setTimeout(() => losers(), 13000);
+   setTimeout(() => button.disabled = false, 13000);
 
  //setTimeout(() => alert('Eliminados:' + removedSquiders), 5000);
 }
+
+//paloma alternate animation every squider
+const boxes = document.getElementsByClassName("box");
+
+for(const box of boxes) {
+   alert ("hasta aqui leo"); 
+   box.classList.add("shakeX"); 
+}
+
 
 //music
 function soundStartGame() {
